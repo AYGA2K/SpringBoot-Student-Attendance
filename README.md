@@ -24,17 +24,17 @@ This project is a simple Student Attendance Management System built using Java a
 +-----------------------------------------+     +-------------------------------+
 | - id: Long                              |     | - id: Long                    |
 | - firstName: String                     |     | - date: String                |
-| - lastName: String                      |     | - student: Student            |
-| - studentClass: String                  |     |                               |
+| - lastName: String                      |     | - students: List            |
+| - absences: List                        |     |                               |
 +-----------------------------------------+     +-------------------------------+
 | + getId(): Long                         |     | + getId(): Long               |
 | + getFirstName(): String                |     | + getDate(): String           |
-| + getLastName(): String                 |     | + getStudent(): Student       |
-| + getStudentClass(): String             |     |                               |
+| + getLastName(): String                 |     | + getStudents(): List         |
+| + getAbsences(): List                   |     |                               |
 | + setId(id: Long)                       |     | + setDate(date: String)       |
-| + setFirstName(firstName: String)       |     | + setStudent(student: Student)|
+| + setFirstName(firstName: String)       |     | + setStudent(student: List)   |
 | + setLastName(lastName: String)         |     |                               |
-| + setStudentClass(studentClass: String) |     |                               |
+| + setAbsences(absences: List)           |     |                               |
 +-----------------------------------------+     +-------------------------------+
 
 ```
