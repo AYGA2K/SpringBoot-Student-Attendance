@@ -8,7 +8,7 @@
     </div>
     <form
       th:object="${student}"
-      hx:post="@{/student/edit/{id}(id=${student.id})}"
+      hx:put="@{/student/edit/{id}(id=${student.id})}"
       hx-trigger="submit"
       hx-target="body"
       class=""
