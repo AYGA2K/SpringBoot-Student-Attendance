@@ -4,17 +4,17 @@ This project is a simple Student Attendance Management System built using Java a
 
 ## Features
 
-    - Create, update, and delete student records.
-    - Record student absences.
-    - View a list of students and their attendance status.
+- Create, update, and delete student records.
+- Record student absences.
+- View a list of students and their attendance status.
 
 ## Technologies Used
 
-    - Spring Boot
-    - Spring Data JPA
-    - Thymeleaf for the user interface
-    - MySQL for the database
-    - HTMX for dynamic updates
+- Spring Boot
+- Spring Data JPA
+- Thymeleaf for the user interface
+- MySQL for the database
+- HTMX for dynamic updates
 
 ## Class Diagram
 
