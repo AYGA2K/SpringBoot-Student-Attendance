@@ -6,7 +6,7 @@ This project is a simple Student Attendance Management System built using Java a
 
 - Create, update, and delete student records.
 - Record student absences.
-- View a list of students and their attendance status.
+- View a list of absence students .
 
 ## Technologies Used
 
