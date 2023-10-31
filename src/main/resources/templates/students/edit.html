@@ -1,0 +1,56 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <div
+    class="container p-4 max-w-md mt-4 mx-auto bg-white rounded-lg shadow-lg"
+  >
+    <div class="mt-5 p-6">
+      <h1 class="text-2xl font-bold mb-4">Edit Student</h1>
+    </div>
+    <form
+      th:object="${student}"
+      hx:post="@{/student/edit/{id}(id=${student.id})}"
+      hx-trigger="submit"
+      hx-target="body"
+      class=""
+    >
+      <div class="mb-4">
+        <label
+          for="firstName"
+          class="block text-sm font-medium text-gray-600 mb-1"
+          >First Name:</label
+        >
+        <input
+          type="text"
+          id="firstName"
+          th:value="${student.firstName}"
+          name="firstName"
+          class="form-input rounded-md shadow-sm mt-1 block w-full p-2"
+          required
+        />
+      </div>
+      <div class="mb-4">
+        <label
+          for="lastName"
+          class="block text-sm font-medium text-gray-600 mb-1"
+          >Last Name:</label
+        >
+        <input
+          type="text"
+          id="lastName"
+          th:value="${student.lastName}"
+          name="lastName"
+          class="form-input rounded-md shadow-sm mt-1 block w-full p-2"
+          required
+        />
+      </div>
+      <div class="mt-5">
+        <button
+          type="submit"
+          class="bg-blue-500 text-white rounded-md px-4 py-2 hover:bg-blue-600"
+        >
+          Update Student
+        </button>
+      </div>
+    </form>
+  </div>
+</html>

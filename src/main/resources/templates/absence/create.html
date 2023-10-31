@@ -1,0 +1,46 @@
+<div class="container mx-auto p-4">
+  <h1 class="text-2xl font-bold mb-4">Absence Management</h1>
+  <form id="absenceForm">
+    <table class="w-full bg-white border rounded-lg">
+      <thead>
+        <tr>
+          <th class="px-4 py-2">ID</th>
+          <th class="px-4 py-2">First Name</th>
+          <th class="px-4 py-2">Last Name</th>
+          <th class="px-4 py-2">Absence</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr th:each="student : ${students}">
+          <td class="border px-4 py-2" th:text="${student.id}"></td>
+          <td
+            class="border px-4 py-2"
+            th:text="${student.firstName}"
+          ></td>
+          <td
+            class="border px-4 py-2"
+            th:text="${student.lastName}"
+          ></td>
+          <td class="border px-4 py-2">
+            <input
+              type="checkbox"
+              id="studentIds"
+              name="studentIds"
+              th:value="${student.id}"
+            />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </form>
+  <div hx-include="#absenceForm" class="mt-5">
+    <button
+      type="submit"
+      hx-post="absence/create"
+      hx-target="body"
+      class="bg-blue-500 text-white rounded-md px-4 py-2 hover:bg-blue-600"
+    >
+      Save Absences
+    </button>
+  </div>
+</div>
