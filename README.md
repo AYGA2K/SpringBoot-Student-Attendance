@@ -1,6 +1,6 @@
 # Student Attendance App
 
-This project is a simple Student Attendance Management System built using Java and Spring Boot. It allows you to manage the attendance records of students in a school.
+This project is a simple Student Attendance Management System built using Java and Spring Boot. It allows you to manage the attendance records of students.
 
 ## Features
 
